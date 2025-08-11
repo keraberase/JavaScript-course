@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    
+    <div class="itemquntity">
+<p>
+    <input type="text" value = "0" id = "quantity">
+    <button id="quantityadd" value="+" onclick="javascript : document.getElementById('quantity').value ++;">+</button>
+    <button id="quantityremove" value="-" onclick="javascript : document.getElementById('quantity').value --;">-</button>
+    <button id="quantityreset" onclick="javascript : document.getElementById('quantity').value = 0;">Reset</button>
+</p>
+
+    </div>
+       <script src = "./main.js"></script> 
 </body>
 </html>
