@@ -19,10 +19,21 @@
 
             <script language="JavaScript">
                 function getPracticeHours() {
-                    document.getElementByID('practiceWeeks').innerHTML =
+                    try{
+                    document.getElementById('practiceWeeks').innerHTML =
                     'It will take you ' + 20 / parseInt(document.getElementById('practiceHours').value) +
                     ' weeks to finish this program';
+                }
+                catch(err){
+                    alert("Error:" + err.message);
+        
                  }
+                  finally{
+                    document.getElementById('practiceWeeks').innerHTML += '<br/> We look forward to see you' }
+                }
+
+               
+                    
 
             </script>
         </section>
