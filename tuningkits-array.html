@@ -99,6 +99,21 @@
         }
         document.getElementById("tuningList").innerHTML += "<ul/>";
         document.getElementById("tuningList").innerHTML += "<br/>Total items: " + tuningList.length;
+
+    }
+
+    function multiArray(){
+        var a1 = new Array(2);
+        for (i = 0; i < 2; i++){
+        a1[i] = new Array(2);
+
+        for (j = 0; j < 2; j++){
+            a1[i][j] = '['+i +','+j+']'; ']';
+
+        } 
+    }
+    a1[0][0] = '[Tuning fork, Red]'
+    document.getElementById("tuningList").innerHTML = a1;
     }
 </script>
 <!-- Begin Footer -->
