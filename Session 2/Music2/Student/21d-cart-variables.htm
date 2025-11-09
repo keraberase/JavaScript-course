@@ -79,7 +79,7 @@
                             <input type="text" value="1" id="manqty"> <br/>
                             <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
                             <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
-                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = '';">Clear</button>
                             <button id="manqtyfive" onclick="addFive('manqty');">Add Five</button>
                         </p>
                         </div>
@@ -221,7 +221,8 @@
 
     <script>
         discount = 10;
-       // declare subtotal and grandtotal variables
+       var subtotal;
+         var grandtotal;
         checkOutExists = false;
         checkOutPage = "checkout.htm";
             function addFive(qty) {

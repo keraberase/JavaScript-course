@@ -218,11 +218,11 @@
 	   </footer>
 
     <script>
-        // declare the discount of 10 here
+        discount = 10.00;
         var subtotal;
         var grandtotal;
-        // declare the checkOutExists variable here and set it to false
-        // declare the checkOutPage variable here and set it to checkout.htm
+        let checkOutExists = false;
+        let checkOutPage = "checkout.htm";
         function addFive(qty) {
             var newQty = parseInt(document.getElementById(qty).value);
             newQty += 5;
