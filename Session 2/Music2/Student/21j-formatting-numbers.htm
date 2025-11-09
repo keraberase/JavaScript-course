@@ -177,11 +177,11 @@
     = parseFloat(document.getElementById('mantotal').innerHTML)
     + parseFloat(document.getElementById('drumtotal').innerHTML)
     + parseFloat(document.getElementById('tromtotal').innerHTML);
-    document.getElementById('salesTax').innerHTML = parseFloat(document.getElementById('subtotal').innerHTML * .07);
+    document.getElementById('salesTax').innerHTML = parseFloat(document.getElementById('subtotal').innerHTML * .07).toFixed(2);
     document.getElementById('grandtotal').innerHTML
-        = parseFloat(document.getElementById('subtotal').innerHTML)
+        = (parseFloat(document.getElementById('subtotal').innerHTML)
         + parseFloat(document.getElementById('salesTax').innerHTML)
-        - parseFloat(document.getElementById('discount').innerHTML)" /></p>
+        - parseFloat(document.getElementById('discount').innerHTML)).toFixed(2)" /></p>
 					<p><input type="button" class="buttons" value="Checkout"></p>
 				</div>
 				
