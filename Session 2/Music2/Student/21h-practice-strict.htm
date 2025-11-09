@@ -26,9 +26,10 @@
 
             <script language="JavaScript">
                 function getPracticeHours() {
+                    "use strict";
                     try
                     {
-                        hoursEntered = parseInt(document.getElementById('practiceHours').value)
+                        var hoursEntered = parseInt(document.getElementById('practiceHours').value)
 
                         document.getElementById('practiceWeeks').innerHTML =
                             'It will take you ' + 20 / hoursEntered + ' weeks to finish this program at '
@@ -39,6 +40,7 @@
                         alert("Error: " + error.description);
                     }
                  }
+                
 
             </script>
         </section>
