@@ -24,12 +24,12 @@
                     {
                         var hoursEntered = parseInt(document.getElementById('practiceHours').value)
                         var msg1 = 'It will take you '
-                        var msg2 = (20 / hoursEntered);
+                        var msg2 = (20 / hoursEntered).toFixed(3);
                         var msg3 = ' weeks to finish this program.'
                         var msg4 = 'Can you do '
                         var msg5 = hoursEntered
                         var msg6 = ' per week for '
-                        var msg7 = ' weeks? Or is this just a "dream?"'
+                        var msg7 = ' weeks? Or is this just a ' + "'dream?'"
 
                         document.getElementById('practiceWeeks').innerHTML =
                             msg1.concat(msg2, msg3) + '<br />' + msg4.concat(msg5, msg6, msg2, msg7);
