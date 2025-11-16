@@ -101,15 +101,19 @@
        		<p class="social"><img src="images/icon_facebook.png" alt="Facebook"/><img src="images/icon_googleplus.png" alt="Google+"/><img src="images/icon_linkedin.png" alt="LinkedIn"/><img src="images/icon_twitter.png" alt="Twitter"/><img src="images/icon_youtube.png" alt="YouTube"/><img src="images/icon_rss.png" alt="RSS"/></p>
 	   </footer>
  <script>
-     // declare array here
+
+  var tuningList = ["Tuning Lever", "Tuning Fork"];
+
      function updateList() {
          document.getElementById('tuningList').innerHTML = tuningList;
 
-         //document.getElementById('tuningList').innerHTML = "<ul>";
-         // insert loop here
-         //document.getElementById('tuningList').innerHTML += "</ul>";
-
+          for (var i = 0; i < tuningList.length; i++) {
+             document.getElementById('tuningList').innerHTML += "<li>" + tuningList[i] + "</li>";
+         }
+         
+         document.getElementById('tuningList').innerHTML += "</ul>";
          document.getElementById('tuningList').innerHTML += "<br /> A tuning lever and tuning fork is a must-have for any tuning kit.";
+         
      }
 
  </script>
