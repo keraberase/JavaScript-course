@@ -44,7 +44,7 @@
                         document.getElementById('practiceWeeks').innerHTML =
                             msg1.concat(msg2, msg3) + '<br />' + msg4.concat(msg5, msg6, msg2, msg7);
                         document.getElementById('practiceDetails').innerHTML =
-                            "Classes start on " + //insert localized date;
+                            "Classes start on " + lessonStartDate.toLocaleDateString('en-US');
                     }
                     catch(error)
                     {
