@@ -107,11 +107,11 @@ Eventually, some of what we have coded will become functions
 <script>
     function getSquareFootage() {
         document.getElementById('toMeasureResult').innerHTML =
-            'Square Feet: '+ //add power method(parseInt(document.getElementById('toMeasure').value), );
+            'Square Feet: '+ Math.pow(parseInt(document.getElementById('toMeasure').value),2);
     }
     function getSide() {
         document.getElementById('toMeasureResult').innerHTML =
-            'Side length: ' + //add square root method(parseInt(document.getElementById('toMeasure').value));
+            'Side length: ' + Math.sqrt(parseInt(document.getElementById('toMeasure').value));
     }
 </script>  
 </body>
