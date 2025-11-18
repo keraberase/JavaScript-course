@@ -222,8 +222,8 @@
     var tromprice = parseFloat(document.getElementById('tromprice').innerHTML);
 
     function showMinMax() {
-        var minprice = // get the minimum of the manprice, drumprice, and tromprice
-        var maxprice = // get the maximum of the manprice, drumprice, and tromprice
+        var minprice = Math.min(manprice, drumprice, tromprice);
+        var maxprice = Math.max(manprice, drumprice, tromprice);
         document.getElementById('minmax').innerHTML = 'The lowest price is ' + minprice
             + ' and the highest is ' + maxprice;
     }
