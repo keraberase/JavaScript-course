@@ -71,15 +71,20 @@
 	   </footer>
 
     <script>
-        
-        function loadJukebox() {
-                        var videoNumber = Math.floor((Math.random() * 2));
-                        if (videoNumber === 0) {
-                            document.getElementById('videoJukebox').src = "./videos/Blues.mp4";
-                        } else {
-                            document.getElementById('videoJukebox').src = "./videos/Happy.mp4";
-                        }
-                    }
+     function loadJukebox() {
+    var videoNumber = Math.floor((Math.random() * 2));
+    var videoSource = document.getElementById('videoJukebox');
+    var videoElement = document.querySelector('video'); 
+    
+    if (videoNumber === 0) {
+        videoSource.src = "videos/Blues.mp4";
+    } else {
+        videoSource.src = "videos/Happy.mp4";
+    }
+    
+    // Reloading the video element
+    videoElement.load();
+}
     </script>
 
 </body>
