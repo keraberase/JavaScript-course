@@ -51,11 +51,11 @@
                             + monthName[lessonStartDate.getMonth()] + " " + lessonStartDate.getDate() + ","
                             + daysUntilStart + " days from now." +
                             "<br /> Lessons end on " + lessonEndDate.toLocaleDateString();
-                        if (hoursEntered < 3) {
+                        if (hoursEntered <= 3) {
                             document.getElementById('practiceDetails').innerHTML +=
                                 "<br /> You really should practice at least three hours a week to best retain what you learn.";
                         }
-                        if (hoursEntered > 8) {
+                        if (hoursEntered >= 8) {
                             document.getElementById('practiceDetails').innerHTML +=
                                 "<br /> More than eight hours a week of practice at first could be overkill.";
                         }  
