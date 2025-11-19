@@ -229,13 +229,13 @@
             document.getElementById(qty).value = newQty;
         }
         function openCheckOut() {   
-            if (checkOutExists == false) {
+            if (!checkOutExists) {
                 checkWin = window.open("checkout.htm", "", "width=300, height=300");
                 checkOutExists = true;
             }
         }
         function closeCheckOut() {
-            if (checkOutExists == true) {
+            if (checkOutExists) {
                 checkWin.close();
                 checkOutExists = false;
             }
