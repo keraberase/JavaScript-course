@@ -114,10 +114,10 @@
          document.getElementById('tuningList').innerHTML += "</ul>";
          document.getElementById('tuningList').innerHTML += "<br /> A tuning lever and tuning fork is a must-have for any tuning kit.";
          */
-         if (document.getElementById('wedgeMute').checked // and document.getElementById('pappsMute').checked) {
+         if (document.getElementById('wedgeMute').checked && document.getElementById('pappsMute').checked) {
              document.getElementById('tuningList').innerHTML = "You selected both mutes.";
          }
-         else if (document.getElementById('wedgeMute').checked // or document.getElementById('pappsMute').checked) {
+         else if (document.getElementById('wedgeMute').checked || document.getElementById('pappsMute').checked) {
          document.getElementById('tuningList').innerHTML = "You selected one mute.";
          }
          else {
