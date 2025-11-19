@@ -219,7 +219,7 @@
 
     <script>
         discount = 10;
-        checkOutExists // add set operator false;
+        checkOutExists = false;
         var subtotal;
         var grandtotal;
 
@@ -229,13 +229,13 @@
             document.getElementById(qty).value = newQty;
         }
         function openCheckOut() {   
-            if (checkOutExists // add conditional operator false) {
+            if (checkOutExists == false) {
                 checkWin = window.open("checkout.htm", "", "width=300, height=300");
                 checkOutExists = true;
             }
         }
         function closeCheckOut() {
-            if (checkOutExists // add not equal operator false) {
+            if (checkOutExists != true) {
                 checkWin.close();
                 checkOutExists = false;
             }
