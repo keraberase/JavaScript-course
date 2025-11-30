@@ -228,17 +228,17 @@
     function showSpecialDiscount() {
         var today = new Date();
         var msg = document.getElementById('specialDiscount');
-        //check (today.getDate()) {
-            //when 1:
+        switch (today.getDate()) {
+            case 1:
                 msg.innerHTML = 'First day of the month. 10% off of all orders today when you call us and mention this!';
-                //exit;
-            //when 7:
+                break;
+            case 7:
                 msg.innerHTML = 'Today is the lucky 7th. 7% off of all orders today when you call us and mention this!';
-                //exit;
-            //when 15:
+                break;
+            case 15:
                 msg.innerHTML = "It's the hump day of the month. 15% off of all orders today when you call us and mention this.!";
-                //exit;
-            //else:
+                break;
+            default:
                 msg.innerHTML = 'Keep checking back for specials.'
 
         }
