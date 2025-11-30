@@ -106,7 +106,7 @@
      function updateList() {      
          document.getElementById('tuningList').innerHTML = "<ul>";
 
-         // start the for loop {
+       for (var i = 0; i < tuningList.length; i++) {
              document.getElementById('tuningList').innerHTML +=
                  "<li>" + tuningList[i] + "</li>"
          }
