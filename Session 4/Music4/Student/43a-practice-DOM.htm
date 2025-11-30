@@ -45,9 +45,9 @@
                         var msg6 = ' per week for '
                         var msg7 = ' weeks? Or is this just a "dream?"'
 
-                        document.getElementById('practiceWeeks').//add code to set the element text
+                        document.getElementById('practiceWeeks').innerHTML =
                             msg1.concat(msg2, msg3) + '<br />' + msg4.concat(msg5, msg6, msg2, msg7);
-                        document.getElementById('practiceDetails').//add code to set the element text "New classes start on "
+                        document.getElementById('practiceDetails').innerHTML = "New classes start on "
                             + monthName[lessonStartDate.getMonth()] + " " + lessonStartDate.getDate() + ", "
                             + daysUntilStart + " days from now." + "<br />";
                             
@@ -67,13 +67,13 @@
                     var detailsSchedule = document.getElementById('lessonSchedule')
                     lessonEndDate.setDate(lessonEndDate.getDate() + 0);
 
-                    detailsSchedule.//add code to append text to this element  "<br /> First lesson: "
+                    detailsSchedule.innerHTML +=  "<br /> First lesson: "
                         + lessonStartDate.toLocaleDateString() + "<br />Subsequent lessons: ";
                 
 
                     do {
                         lessonStartDate.setDate(lessonStartDate.getDate() + 7);
-                        detailsSchedule. //add code to append text to this element "<br />" + lessonStartDate.toLocaleDateString();
+                        detailsSchedule.innerHTML += "<br />" + lessonStartDate.toLocaleDateString();
                     }
                      while (lessonStartDate < lessonEndDate)
                                        
