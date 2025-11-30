@@ -70,12 +70,12 @@
                         + lessonStartDate.toLocaleDateString() + "<br />Subsequent lessons: ";
                 
 
-                    // add condition here {
+                     do {
                         lessonStartDate.setDate(lessonStartDate.getDate() + 7);
                         detailsSchedule.innerHTML += "<br />" + lessonStartDate.toLocaleDateString();
                     }
 
-                    
+                    while (lessonStartDate < lessonEndDate)
                 }
 
             </script>
