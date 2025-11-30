@@ -74,9 +74,9 @@
                     do {
                         
                         lessonStartDate.setDate(lessonStartDate.getDate() + 7);
-                        if (// add condition to where lessonStartDate matches the breakDate) {
+                        if (lessonStartDate.getTime() == breakDate.getTime()) {
 
-                            // exit the loop if the condition is true ;
+                            continue;
                         }
                         detailsSchedule.innerHTML += "<br />" + lessonStartDate.toLocaleDateString();
                         
