@@ -73,8 +73,8 @@
 
                     <div class="itemquantity">
                         <p>
-                            <input type="text" value="1" id="manqty">
-                            <!-- encourage mouse use --> <br/>
+                            <input type="text" value="1" id="manqty"
+                            onkeydown="alert('It may be easier to use buttons to change this field.')"><br/>
                             <button id="manqtyadd" onclick="addOne('manqty');">+</button>
                             <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
                             <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
