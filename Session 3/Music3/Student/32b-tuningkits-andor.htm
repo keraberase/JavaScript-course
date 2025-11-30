@@ -108,10 +108,10 @@
          if (document.getElementById('wedgeMute').checked && document.getElementById('pappsMute').checked) {
              document.getElementById('tuningList').innerHTML = "You selected both mutes.";
          }
-         // check this condition if the first one is false (document.getElementById('wedgeMute').checked || document.getElementById('pappsMute').checked) {
+        else if (document.getElementById('wedgeMute').checked || document.getElementById('pappsMute').checked) {
          document.getElementById('tuningList').innerHTML = "You selected one mute.";
          }
-         // do this if both conditions are false {
+        else {
              document.getElementById('tuningList').innerHTML = "";
          }
 
