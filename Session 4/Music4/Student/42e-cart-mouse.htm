@@ -177,7 +177,7 @@
                     <div class="order_buttons">
                         <p>
                             <input type="button" class="buttons" value="Update Cart"
-                            onclick="updateCart();" <!--add instructions to click the button when mouse moves away-->/>
+                            onclick="updateCart();" onmouseout="document.getElementById('cartMsg').innerHTML = ' Click the Update Cart button to update the order total';"/>
                         </p>
                         <p><input type="button" class="buttons" value="Checkout" onclick="checkoutWindow();"></p>
                         <p><input type="button" class="buttons" value="Close Checkout" onclick="closeCheckOut();" /></p>
