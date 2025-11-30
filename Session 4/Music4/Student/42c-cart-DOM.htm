@@ -21,7 +21,7 @@
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
-<body>
+<body onload="//alert('This is an example of the onload event.');">
    <section id="main">
 	   	<section id="main_content">
   			<header>
@@ -73,10 +73,10 @@
                     <div class="itemquantity">
                         <p>
                             <input type="text" value="1" id="manqty"> <br/>
-                            <button id="manqtyadd" <!-- run when clicked-->="addOne('manqty');">+</button>
-                            <button id="manqtysubtract" <!-- run when clicked-->="javascript: document.getElementById('manqty').value--;">-</button>  
-                            <button id="manqtyzero" <!-- run when clicked-->="javascript: document.getElementById('manqty').value = 0;">Clear</button>
-                            <button id="manqtyfive" <!-- run when clicked-->="addFive('manqty');">Add Five</button>
+                            <button id="manqtyadd" onclick= "addOne('manqty');">+</button>
+                            <button id="manqtysubtract" onclick= "javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick= "javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick= "addFive('manqty');">Add Five</button>
                         </p>
                         </div>
 
