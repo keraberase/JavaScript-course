@@ -109,10 +109,17 @@
              document.getElementById('tuningList').innerHTML = "You selected both mutes.";
          }
          else if (document.getElementById('wedgeMute').checked || document.getElementById('pappsMute').checked) {
+
              // nest an if statement to return messages based on what is checked
-             document.getElementById('tuningList').innerHTML = "You selected the Wedge mute.";
+
+            if  (document.getElementById('wedgeMute').checked) {
+				
+				document.getElementById('tuningList').innerHTML = "You selected the Wedge mute.";
+			}
+					 else {
 
              document.getElementById('tuningList').innerHTML = "You selected the Papps mute.";
+					 }
 
          }
          else {
