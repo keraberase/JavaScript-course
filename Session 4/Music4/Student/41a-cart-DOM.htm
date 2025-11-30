@@ -229,7 +229,7 @@
             document.getElementById(qty).value = newQty;
         }
         function checkoutWindow() {   
-            checkWin = window.open("checkout.htm", "", "width=300, height=300");
+            checkWin = window.open("checkout.htm", "", "width=300, height=300, status=no");
             checkWin.document.write("<p>This document is current as of " + Date());
         }
         function closeCheckOut() {
