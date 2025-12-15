@@ -230,7 +230,7 @@
         }
         function checkoutWindow() {  
             checkWin = window.open("checkout.htm", "", "width=300, height=300, status=no");
-            // add text to the new window
+            checkWin.document.write('<p> This document is current as of ' + Date() );
         }
         function closeCheckOut() {
             checkWin.close();
