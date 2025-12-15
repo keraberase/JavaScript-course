@@ -20,8 +20,12 @@
 <mso:ContentTypeId msdt:dt="string">0x0101009F1A1A9B9131484CB900844943E1876F</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
+
+
 </head>
 <body>
+
+   
    <section id="main">
 	   	<section id="main_content">
   			<header>
@@ -69,17 +73,16 @@
 
        		<p class="social"><img src="images/icon_facebook.png" alt="Facebook"/><img src="images/icon_googleplus.png" alt="Google+"/><img src="images/icon_linkedin.png" alt="LinkedIn"/><img src="images/icon_twitter.png" alt="Twitter"/><img src="images/icon_youtube.png" alt="YouTube"/><img src="images/icon_rss.png" alt="RSS"/></p>
 	   </footer>
-
-    <script>
+ <script>
         function getImages() {
-            var imgList = document.//get all of the images;
-            for (var i = 0; i < imgList.length; i++) {
-                document.getElementById('output').innerHTML += "<br />" + imgList[i].src;
-            }
+            var imgList = document.getElementsByTagName("img");
+    for (var i = 0; i < imgList.length; i++) {
+        document.getElementById('output').innerHTML += "<br />" + imgList[i].src;
+    }
         }
 
         function getClasses() {
-            var classList = document.// get all of the social class instances
+            var classList = document.getElementsByClassName("social");
                 document.getElementById('output').innerHTML += "<br />" + classList.length;
         }
 
@@ -92,10 +95,10 @@
             var constructionText = document.createTextNode("This page is under construction. " +
                 "We're not actually comparing instruments right now.");
             constructionP.appendChild(constructionText);
-            document.// get sitelogo element.appendChild(constructionP);
+            document.getElementById("sitelogo").appendChild(constructionP);
         }
-        
     </script>
+    
 
 </body>
 <!-- InstanceEnd --></html>
