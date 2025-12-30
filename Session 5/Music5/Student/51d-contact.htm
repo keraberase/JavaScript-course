@@ -49,7 +49,7 @@
                                 <label for="location">Location</label>
                             </td>
                             <td>
-                                <select name="location" id="location">
+                                <select onchange="fillState(this.value);" name="location" id="location">
                                     <option value=""></option>
                                     <option value="Salt Lake City">Salt Lake City</option>
                                     <option value="Summerlin">Summerlin</option>
@@ -181,9 +181,16 @@
         function fillState(location) {
             var state = document.getElementById('state');
             if (state.value == '') {
-                // add city and state logic
+                if (location == 'Salt Lake City') {
+                    state.value = 'UT';
                 }
+                else if (location == 'Summerlin') {
+                    state.value = 'NV';
+                }
+                else {
+                    state.value = null;
             }
+        }
         }
 
         function convertUpper(text, field) {
