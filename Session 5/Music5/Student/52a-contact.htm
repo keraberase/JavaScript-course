@@ -128,7 +128,7 @@
                         </optgroup>
                     </select>
                     <p>What instrument are you most interested in learning?</p>
-                    <input list="instruments" name="instrument" id="instrument"/>
+                    <input list="instruments" name="instrument" id="instrument" onchange="convertLower(this.value, 'instrument');"/>
                     <datalist id="instruments">
                         <option value="guitar"></option>
                         <option value="piano"></option>
@@ -194,14 +194,16 @@
         }
 
         function convertUpper(text, field) {
-            document.getElementById(field).value = text.// convert to upper
+            document.getElementById(field).value = text.toUpperCase();
         }
 
         function convertLower(text, field) {
-            document.getElementById(field).value = text.// convert to lower
+            document.getElementById(field).value = text.toLowerCase();
         }
+
         function checkCity(city) {
-            // make the city variable uppercase
+
+        city = city.toUpperCase();
             if (city == 'LAS VEGAS' || city == 'NORTH LAS VEGAS' || city == 'HENDERSON') {
                 document.getElementById('testResults').innerHTML = 'The Summerlin location will open in 2018';
             }
