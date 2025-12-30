@@ -84,15 +84,15 @@
         }
 
         function setAltHeadingClass() {
-            document.getElementsByTagName("h1")[0].// set the class to altheading
+            document.getElementsByTagName("h1")[0].setAttribute("class", "altheading");
         }
 
         function addConstructionMsg() {
-            var constructionP = document.// create a paragraph element
-            var constructionText = document.// add this text node("This page is under construction. " +
+            var constructionP = document.createElement("p");
+            var constructionText = document.createTextNode("This page is under construction. " +
                 "We're not actually comparing instruments right now.");
-            constructionP.// add text node to variable (constructionText);
-            document.getElementById('sitelogo').// add variable to element (constructionP);
+            constructionP.appendChild(constructionText);
+            document.getElementById('sitelogo').appendChild(constructionP);
         }
         
     </script>
