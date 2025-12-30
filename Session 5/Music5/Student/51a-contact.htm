@@ -171,8 +171,8 @@
     <script>
         function fillTestResults() {
             var testResults = document.getElementById('testResults');
-            var firstName = // get what the user typed in for a first name
-            var lastName = // get what the user typed in for a first name
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
 
             testResults.innerHTML = "You entered " + firstName + " " + lastName + " for a name.";
         }
