@@ -92,7 +92,7 @@
                                 <label for="zip">Zip</label>
                             </td>
                             <td>
-                                <input type="text" name="zip" id="zip" />
+                                <input type="text" name="zip" id="zip" required/>
                             </td>
                         </tr>
                         <tr>
@@ -141,7 +141,7 @@
                     <p>Add comments below</p>
                     <textarea name="comments" rows="6" cols="50" maxlength="255"></textarea>
                 </fieldset>
-                <input type="button" class="buttons" name="testForm" value="Test form" onclick="fillTestResults();"/>
+                <input type="button" class="buttons" name="testForm" value="Test form" onclick="fillTestResults(); checkFields();"/>
                 <input type="submit" class="buttons" name="submitform" value="Send it" /> <br />
                 
             </form>
@@ -208,7 +208,7 @@
 
         }
         function checkFields() {
-            if (document.getElementById('firstName').value == '' // add operator
+            if (document.getElementById('firstName').value == '' ||
                 document.getElementById('lastName').value == '') {
                 alert('One or more required name fields is empty');
             }
